@@ -1,21 +1,7 @@
 (function($) {
 	$(document).ready(function() {
 		"use strict";
-		
-	
-		// WORKS BACKGROUND
-		$(".project-box").hover(function () {
-		$(".works").css("background-color", $(this).data('bg'));
-        $(".works").not(this).each(function(){
-            $(this).css("background-color", $(this).data('bg'));
-        });
-		}, function(){
-			$(".works").css("background-color", '');
-		});	
-		
-		
-		
-		
+				
 		// TYPEWRITER
 			$("#typewriter").typewriter({
 				prefix : "",
@@ -37,74 +23,6 @@
 				},
 			},
 			});
-	
-		
-	
-		// EQUALIZER TOGGLE
-			var source = "audio/audio.mp3";
-			var audio = new Audio(); // use the constructor in JavaScript, just easier that way
-			audio.addEventListener("load", function() {
-			  audio.play();
-			}, true);
-			audio.src = source;
-			audio.autoplay = true;
-			audio.loop = true;
-			audio.volume = 0.2;
-		
-
-			$('.equalizer').click();		
-			var playing = true;		
-			$('.equalizer').on('click', function(e) {
-				if (playing == false) {
-			  audio.play();
-					playing = true;
-
-				} else {
-					audio.pause();
-					playing = false;
-				}
-			});
-	
-	
-		// EQUALIZER
-				function randomBetween(range) {
-					var min = range[0],
-						max = range[1];
-					if (min < 0) {
-						return min + Math.random() * (Math.abs(min)+max);
-					}else {
-						return min + Math.random() * max;
-					}
-				}
-
-				$.fn.equalizerAnimation = function(speed, barsHeight){
-					var $equalizer = $(this);
-					setInterval(function(){
-						$equalizer.find('span').each(function(i){
-						  $(this).css({ height:randomBetween(barsHeight[i])+'px' });
-						});
-					},speed);
-					$equalizer.on('click', function(e) {
-						$equalizer.toggleClass('paused');
-					});
-				}
-
-				var barsHeight = [
-				  [8, 22],
-				  [5, 10],
-				  [11, 8],
-				  [1, 27],
-				  [9, 1],
-				  [16, 3]
-				];
-				$('.equalizer').equalizerAnimation(250, barsHeight);
-	
-		// HAMBURGER AUDIO
-			document.getElementById("hamburger-menu").addEventListener('click', function(e) {
-			document.getElementById("hamburger-hover").play();
-	  	});
-		
-		
 	
 		// DATA BACKGROUND IMAGE
 			var pageSection = $(".bg-image");
@@ -220,6 +138,21 @@
 					}
 				});
 			});
+
+
+            document.querySelectorAll('.faq-question').forEach(item => {
+                item.addEventListener('click', () => {
+                  const parent = item.parentElement;
+                  
+                  // Toggle la clase 'active' para expandir o contraer la respuesta
+                  parent.classList.toggle('active');
+                  
+                  // Alternar visibilidad de la respuesta
+                  const answer = parent.querySelector('.faq-answer');
+                  answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+                });
+              });
+              
 	
 	
 	

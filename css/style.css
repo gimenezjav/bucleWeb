@@ -138,7 +138,7 @@ section {
 }
 .pagination a:hover {
   text-decoration: none;
-  border-bottom: 2px solid #01f7b6;
+  border-bottom: 2px solid #E59400;
 }
 
 /* PAGE LOADED */
@@ -179,7 +179,7 @@ section {
   bottom: 0;
   z-index: 11;
   overflow: hidden;
-  background: #01f7b6;
+  background: #E59400;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -258,7 +258,7 @@ section {
   width: 2px;
   height: 22px;
   display: inline-block;
-  background: #01f7b6;
+  background: #E59400;
   text-indent: -1000px;
   overflow: hidden;
 }
@@ -268,7 +268,7 @@ section {
   width: 100%;
   height: 0;
   position: fixed;
-  background: #01f7b6;
+  background: #E59400;
   left: 0;
   bottom: 0;
   z-index: 15;
@@ -326,7 +326,7 @@ section {
 }
 
 .equalizer span {
-  background: #01f7b6;
+  background: #E59400;
   width: 1px;
   height: 1px;
   top: 50%;
@@ -376,6 +376,13 @@ section {
   z-index: 9;
   visibility: hidden;
 }
+.navigation-menu img {
+    position: absolute;  /* Fija la imagen para que esté siempre visible al hacer scroll */
+    bottom: -250px;     /* Separa la imagen de la parte inferior de la pantalla */
+    left: 50%;        /* Centra la imagen horizontalmente */
+    transform: translateX(-50%);  /* Ajusta para centrar perfectamente en el medio */
+  }
+  
 .navigation-menu .bg-layers {
   width: 100%;
   height: 100%;
@@ -483,7 +490,7 @@ section {
 }
 .navigation-menu .inner .menu ul li a:hover {
   padding-bottom: 3px;
-  border-bottom: 5px solid #01f7b6;
+  border-bottom: 5px solid #E59400;
   text-decoration: none;
 }
 .navigation-menu .inner .menu ul li ul {
@@ -506,7 +513,7 @@ section {
 .navigation-menu .inner .menu ul li ul li a:hover {
   padding: 0;
   border-bottom: none;
-  color: #01f7b6;
+  color: #E59400;
 }
 .navigation-menu .inner .menu ul li ul li:hover ul {
   opacity: 1;
@@ -529,7 +536,7 @@ section {
   font-size: 2vw;
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
-  color: #01f7b6;
+  color: #E59400;
   opacity: 0;
   transition-delay: 0.5s;
   transform: translateY(30px);
@@ -579,7 +586,7 @@ section {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #01f7b6;
+  background: #E59400;
   z-index: 0;
 }
 .hamburger span:nth-child(1) {
@@ -612,7 +619,7 @@ section {
 }
 .hamburger span:after {
   z-index: 2;
-  background: #01f7b6;
+  background: #E59400;
   transition: all 0.15s linear 0.3s;
 }
 .hamburger span:nth-child(2):before {
@@ -855,7 +862,7 @@ section {
   left: 0;
   top: 0;
   overflow: hidden;
-  z-index: 0;
+  z-index: 20;
 }
 .header .video-bg:before {
   content: "";
@@ -924,7 +931,7 @@ section {
 .page-header .container p {
   margin-bottom: 0;
   font-family: "Fjalla One", sans-serif;
-  color: #01f7b6;
+  color: #E59400;
 }
 
 header {
@@ -1087,7 +1094,7 @@ header .sound .equalizer .holder {
   height: 56px;
 }
 .navbar .right {
-  width: 30%;
+  width: 10%;
   margin-right: 0;
   display: flex;
 }
@@ -1118,7 +1125,10 @@ header .sound .equalizer .holder {
 }
 .navbar .right .hamburger-menu {
   margin-right: 0;
-  margin-left: 60px;
+  margin-left: 0px;
+}
+#hamburger-menu{  
+  cursor: pointer;
 }
 .navbar .right .hamburger-menu .hamburger {
   float: right;
@@ -1331,13 +1341,15 @@ header .sound .equalizer .holder {
   line-height: 1;
 }
 .swiper-slider .swiper-slide .slide-inner .container h1 span {
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   transform: translateY(-35%);
   margin-left: 4%;
   display: flex;
-  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-color: #000;
   color: transparent;
+  font-size: 190px;
 }
+
 .swiper-slider .swiper-slide .slide-inner .container .slide-btn {
   float: left;
 }
@@ -1380,7 +1392,7 @@ header .sound .equalizer .holder {
   content: "";
   width: 22px;
   height: 1px;
-  background: #01f7b6;
+  background: #E59400;
   position: absolute;
   top: 10px;
   right: 0;
@@ -1407,9 +1419,10 @@ header .sound .equalizer .holder {
   font-size: 14px;
 }
 .intro h2 {
-  margin-bottom: 60px;
+  margin-top: 120px;
+  margin-bottom: -60px;
   font-weight: 800;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.2;
   padding-right: 35%;
 }
@@ -1430,11 +1443,13 @@ header .sound .equalizer .holder {
   text-transform: uppercase;
   padding-right: 20%;
 }
-.intro p {
-  margin-bottom: 30px;
-  font-size: 20px;
-  line-height: 37px;
-}
+#first-div{
+    position: relative; /* Permite ajustar la posición */
+    top: 20%; /* Mueve el div hacia arriba */
+    left: 60%; /* Mueve el div hacia la derecha */
+    width: 48%;
+} 
+
 .intro u {
   text-decoration: none;
   border-bottom: 3px dotted #e8293b;
@@ -1445,6 +1460,17 @@ header .sound .equalizer .holder {
 }
 .intro .custom-link {
   transform: translateY(30px);
+}
+
+#transparent-letter{
+    font-weight: 800;
+    -webkit-text-stroke-width: 1.2px;
+    margin-left: -7px;
+    display: flex;
+    -webkit-text-stroke-color: #777;
+    color: transparent;
+    font-size: 200px;
+    letter-spacing: -5px;
 }
 
 /* PROCESS */
@@ -1490,7 +1516,7 @@ header .sound .equalizer .holder {
   font-weight: 600;
   color: #fff;
   border-radius: 50%;
-  background: #01f7b6;
+  background: #E59400;
   position: relative;
   border: 10px solid #e2fdf1;
   margin-top: 50px;
@@ -1574,12 +1600,12 @@ s .process span:before {
 .services-content-block small {
   display: inline-block;
   font-family: "Fjalla One", sans-serif;
-  color: #01f7b6;
+  color: #E59400;
 }
 .services-content-block span {
   width: 50px;
   height: 1px;
-  background: #01f7b6;
+  background: #E59400;
   display: inline-block;
   margin: 5px 15px;
 }
@@ -1605,6 +1631,11 @@ s .process span:before {
   transition-delay: 0s !important;
   transition: background 0.4s;
 }
+#work1 {
+    background-color: #000;
+    color: #fff;
+  }
+
 .works h6 {
   display: block;
   line-height: 1;
@@ -1629,6 +1660,15 @@ s .process span:before {
   left: 0;
   top: -20%;
 }
+.description {
+    position: relative;
+    top: -50px; 
+    max-width: 250px;
+    display: block;
+  }
+#work1 .description {
+    left: 150px
+  }  
 .works .project-box {
   width: 100%;
   display: flex;
@@ -1705,7 +1745,7 @@ s .process span:before {
 .works .project-box .content-box .inner h3 span {
   display: block;
   font-size: 8vw;
-  color: #01f7b6;
+  color: #E59400;
   margin-left: -7vw;
 }
 
@@ -1753,7 +1793,7 @@ s .process span:before {
   font-size: 60px;
   font-weight: 800;
   margin-top: 80px;
-  color: #01f7b6;
+  color: #E59400;
   text-align: center;
   text-transform: uppercase;
   font-family: "Fjalla One", sans-serif;
@@ -1777,13 +1817,90 @@ s .process span:before {
   width: 100%;
 }
 
+
+.faq-section {
+    padding: 50px 50px 50px 50px;
+    position: relative;
+    background-color: #fff;
+    min-height: 100vh;
+  }
+
+  .faq-section .faq-header{
+    display: flex;
+    flex-direction: row;
+    margin-top: -100px;
+  }
+  
+  /* Título grande FAQ */
+  .faq-section .faq-header h1 {
+    font-size: 450px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ccc;
+    text-align: left;
+    margin-bottom: 20px;
+    letter-spacing: -30px;
+  }
+   #letter-a{
+    margin-left: -45px;
+    margin-right: -20px;
+   }
+
+   .faq-intro {
+    margin: -70px 0 50px 70px;
+  }
+  
+  .faq-intro h2 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #E59400; 
+    text-align: left;
+    letter-spacing: -5px;
+  }
+  
+  /* Estilo para la lista de preguntas */
+  .faq-section .faq-list .faq-item {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+  
+  /* Preguntas */
+  .faq-section .faq-list .faq-question {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #404040;
+  }
+  
+  /* Respuestas ocultas por defecto */
+  .faq-section .faq-list .faq-answer {
+    font-size: 18px;
+    display: none;
+    margin-top: 10px;
+    color: #666;
+  }
+  
+  /* Para asegurarse que las letras FAQ no se superponen al margen derecho */
+  .faq-section .faq-header {
+    margin-right: 100px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Estilo para cuando se expande la respuesta */
+  .faq-section .faq-item.active .faq-answer {
+    display: block;
+  }
+
+
 /* TEAM */
 .team {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   padding: 150px 0;
-  background: #01f7b6;
+  background: #E59400;
   position: relative;
 }
 .team h6 {
@@ -1841,7 +1958,7 @@ s .process span:before {
   display: flex;
   flex-wrap: wrap;
   padding: 150px 0;
-  background: #01f7b6;
+  background: #E59400;
   position: relative;
 }
 .work-with-us:before {
@@ -2119,7 +2236,7 @@ s .process span:before {
   color: #0e0e0e;
 }
 .news .post .post-content .inner .post-title a:hover {
-  color: #01f7b6;
+  color: #E59400;
   text-decoration: none;
 }
 .news .post .post-content .inner .post-author {
@@ -2148,7 +2265,7 @@ s .process span:before {
   display: block;
   padding: 40px;
   margin-bottom: 40px;
-  background: #01f7b6;
+  background: #E59400;
   font-family: "Fjalla One", sans-serif;
   position: relative;
 }
@@ -2270,7 +2387,7 @@ s .process span:before {
   font-size: 14px;
   font-weight: 600;
   color: #0e0e0e;
-  background: #01f7b6;
+  background: #E59400;
   border: none;
 }
 
@@ -2388,7 +2505,7 @@ s .process span:before {
   font-size: 3vw;
   font-weight: 800;
   margin-bottom: 0;
-  color: #01f7b6;
+  color: #E59400;
 }
 .footer .footer-contact {
   width: 100%;
@@ -2412,7 +2529,7 @@ s .process span:before {
   margin-bottom: 10px;
   font-family: "Fjalla One", sans-serif;
   text-transform: uppercase;
-  color: #01f7b6;
+  color: #E59400;
 }
 .footer .footer-bottom ul {
   display: block;
@@ -2720,6 +2837,10 @@ s .process span:before {
     padding: 20px 30px;
   }
 
+  .navbar .right {
+    width: 30%;
+  }  
+
   .navbar .right ul {
     display: none;
   }
@@ -2962,6 +3083,10 @@ s .process span:before {
   .footer .footer-bottom ul li {
     margin-right: 15px;
   }
+
+ /* Estilo para la sección FAQ */
+
+  
 }
 
 /*# sourceMappingURL=style.css.map */
