@@ -108,38 +108,6 @@ section {
     max-width: 1100px;
   }
 }
-/* ODOMETER */
-.odometer {
-  line-height: 1;
-}
-
-.odometer.odometer-auto-theme .odometer-digit, .odometer.odometer-theme-car .odometer-digit {
-  padding: 0;
-}
-
-.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner, .odometer.odometer-theme-car .odometer-digit .odometer-digit-inner {
-  left: 0;
-}
-
-/* PAGINATION */
-.pagination {
-  display: block;
-  text-align: center;
-  margin-top: 50px;
-}
-.pagination a {
-  display: inline-block;
-  font-weight: 600;
-  color: #0e0e0e;
-  margin: 0 10px;
-  font-size: 14px;
-  border-bottom: 2px solid #0e0e0e;
-  padding-bottom: 2px;
-}
-.pagination a:hover {
-  text-decoration: none;
-  border-bottom: 2px solid #E59400;
-}
 
 /* PAGE LOADED */
 .page-loaded {
@@ -318,48 +286,6 @@ section {
   height: 100%;
 }
 
-/* EQUALIZER */
-.equalizer {
-  cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.equalizer span {
-  background: #E59400;
-  width: 1px;
-  height: 1px;
-  top: 50%;
-  bottom: 0;
-  left: 0%;
-  transform: translateY(-50%);
-  position: absolute;
-  transition: height 0.2s linear;
-}
-
-.equalizer span:nth-child(1) {
-  margin-left: 4px;
-}
-
-.equalizer span:nth-child(2) {
-  margin-left: 8px;
-}
-
-.equalizer span:nth-child(4) {
-  margin-left: 12px;
-}
-
-.equalizer span:nth-child(5) {
-  margin-left: 16px;
-}
-
-.equalizer span:nth-child(6) {
-  margin-left: 20px;
-}
-
-.equalizer.paused span {
-  height: 1px !important;
-}
 
 /* NAVIGATION MENU */
 .navigation-menu {
@@ -1140,97 +1066,6 @@ header .sound .equalizer .holder {
   margin-right: 15px;
 }
 
-/* SLIDE BTN */
-.slide-btn {
-  display: block;
-  transition: all 0.5s;
-  padding-left: 30px;
-}
-
-.slide-btn a {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 14px;
-  color: #fff;
-}
-
-.slide-btn a:hover {
-  text-decoration: none;
-}
-
-.slide-btn b {
-  font-weight: 600;
-}
-
-.slide-btn .lines {
-  width: 42px;
-  height: 1px;
-  float: left;
-  overflow: hidden;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -ms-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.slide-btn .lines span:nth-child(1) {
-  width: 100%;
-  height: 1px;
-  float: right;
-  background: #fff;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -ms-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.slide-btn .lines span:nth-child(2) {
-  width: 0;
-  height: 1px;
-  float: left;
-  background: #fff;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -ms-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-
-.slide-btn:hover .lines {
-  width: 62px;
-  margin-left: 20px;
-}
-
-.slide-btn:hover .lines span:nth-child(1) {
-  width: 0;
-}
-
-.slide-btn:hover .lines span:nth-child(2) {
-  width: 100%;
-  transition-delay: 0.2s;
-}
-
-.slide-btn .video-play-circle {
-  stroke-dasharray: 315;
-  stroke-dashoffset: 315;
-  transition: stroke-dashoffset 0.5s;
-}
-
-.slide-btn svg {
-  width: 50px;
-  height: 50px;
-  transition: transform 0.3s;
-  margin-left: -25px;
-  margin-right: 15px;
-}
-
-.slide-btn:hover .video-play-circle {
-  stroke-dashoffset: 0;
-}
-
 /* SWIPER SLIDER */
 .swiper-slider {
   width: 100%;
@@ -1409,6 +1244,7 @@ header .sound .equalizer .holder {
     height: 100vh; /* Ajusta la altura según sea necesario */
     background-size: cover;
     background-position: center;
+    padding: 0% 5%;
 }
 
 .nosotros-wrapper {
@@ -1419,7 +1255,7 @@ header .sound .equalizer .holder {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 50px;
+    text-align: left;
 }
 
 .nosotros-large {
@@ -1429,7 +1265,9 @@ header .sound .equalizer .holder {
     -webkit-text-stroke: 1px #999; /* Borde negro */
     letter-spacing: -13px; /* Ajusta el espacio entre letras si es necesario */
     margin-top: 10%;
+    margin-left: -12px;
     padding: 0;
+    width: 100%;
 }
 
 .nosotros-small {
@@ -1437,18 +1275,18 @@ header .sound .equalizer .holder {
     font-weight: 700;
     color: #000; /* Color negro para el "nosotros" más pequeño */
     position: absolute;
-    top: 33%; /* Ajusta la posición de acuerdo a tu preferencia */
-    left: 60px;
+    top: 35%; /* Ajusta la posición de acuerdo a tu preferencia */
+
     margin: 0;
 }
 
 .nosotros-text {
     position: absolute;
-    top: 13%;
-    right: 10%;
+    top: 11%;
+    right: 5%;
     max-width: 40%;
     font-size: 18px;
-    line-height: 1.4;
+    line-height: 1.2;
     color: #000;
     font-weight: 500;
 }
@@ -1459,45 +1297,7 @@ header .sound .equalizer .holder {
 
 
 /* INTRO */
-.intro {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-}
-.intro h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  opacity: 0.5;
-  font-size: 14px;
-}
-.intro h2 {
-  margin-top: 120px;
-  margin-bottom: -60px;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 1.2;
-  padding-right: 35%;
-}
-.intro h2:before {
-  content: attr(data-text);
-  font-size: 20vw;
-  opacity: 0.05;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: -20%;
-}
-.intro h4 {
-  margin-top: 5px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 25px;
-  line-height: 40px;
-  text-transform: uppercase;
-  padding-right: 20%;
-}
+
 #first-div{
     position: relative; /* Permite ajustar la posición */
     top: 20%; /* Mueve el div hacia arriba */
@@ -1505,17 +1305,6 @@ header .sound .equalizer .holder {
     width: 48%;
 } 
 
-.intro u {
-  text-decoration: none;
-  border-bottom: 3px dotted #e8293b;
-  font-weight: 600;
-}
-.intro strong {
-  font-weight: 600;
-}
-.intro .custom-link {
-  transform: translateY(30px);
-}
 
 #transparent-letter{
     font-weight: 800;
@@ -1528,163 +1317,16 @@ header .sound .equalizer .holder {
     letter-spacing: -5px;
 }
 
-/* PROCESS */
-.process {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px 0;
-  position: relative;
-  text-align: center;
-}
-.process h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  opacity: 0.5;
-  font-size: 14px;
-  position: relative;
-}
-.process h2 {
-  margin-bottom: 60px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-}
-.process h2:before {
-  content: attr(data-text);
-  font-size: 20vw;
-  opacity: 0.05;
-  z-index: -1;
-  transform: translateX(-50%);
-  position: absolute;
-  left: 50%;
-  top: -50%;
-}
-.process span {
-  width: 80px;
-  height: 80px;
-  line-height: 62px;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  color: #fff;
-  border-radius: 50%;
-  background: #E59400;
-  position: relative;
-  border: 10px solid #e2fdf1;
-  margin-top: 50px;
-}
-s .process span:before {
-  content: "";
-  width: 30vw;
-  height: 2px;
-  background: #e2fdf1;
-  position: absolute;
-  left: -30px;
-  top: 30px;
-  z-index: -1;
-}
-.process .col-md-3:last-child span:before {
-  display: none;
-}
-.process figure {
-  width: 100%;
-  display: block;
-  margin: 20px 0;
-  background: #fff;
-}
-.process figure img {
-  height: 90px;
-}
-.process h5 {
-  font-weight: 600;
-  font-size: 13px;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-/* SERVICES CONTENT BLOCK */
-.services-content-block {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-  background: #0e0e0e;
-  color: #fff;
-  position: relative;
-}
-.services-content-block .video-bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  overflow: hidden;
-  opacity: 0.2;
-}
-.services-content-block .video-bg video {
-  min-width: 100%;
-  min-height: 100%;
-  float: left;
-}
-.services-content-block h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 14px;
-}
-.services-content-block h2 {
-  margin-bottom: 60px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-  padding-right: 35%;
-}
-.services-content-block .left {
-  width: 100px;
-  float: left;
-  margin-top: -2px;
-}
-.services-content-block .right {
-  width: calc(100% - 100px);
-  float: left;
-}
-.services-content-block small {
-  display: inline-block;
-  font-family: "Fjalla One", sans-serif;
-  color: #E59400;
-}
-.services-content-block span {
-  width: 50px;
-  height: 1px;
-  background: #E59400;
-  display: inline-block;
-  margin: 5px 15px;
-}
-.services-content-block h4 {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 17px;
-  margin-bottom: 30px;
-}
-.services-content-block ul {
-  padding-left: 20px;
-  margin-bottom: 0;
-}
-.services-content-block ul li {
-  line-height: 1.8;
-}
-
 /* WORKS */
 .works {
   width: 100%;
+  height: 100vh;
   display: flex;
   flex-wrap: wrap;
   padding: 150px 0;
   transition-delay: 0s !important;
   transition: background 0.4s;
+  align-items: center;
 }
 #work1 {
     background-color: #000;
@@ -1804,87 +1446,24 @@ s .process span:before {
   margin-left: -7vw;
 }
 
-/* WORKS SINGLE */
-.works-single {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-}
-.works-single h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  opacity: 0.5;
-  font-size: 14px;
-}
-.works-single h2 {
-  margin-bottom: 50px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-  padding-right: 35%;
-}
-.works-single h4 {
-  margin-top: 5px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 25px;
-  line-height: 40px;
-  text-transform: uppercase;
-  padding-right: 20%;
-}
-.works-single .text-desc {
-  margin-bottom: 50px;
-}
-.works-single h5 {
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  text-transform: uppercase;
-  font-size: 20px;
-  margin-top: 10px;
-}
-.works-single h3 {
-  font-size: 60px;
-  font-weight: 800;
-  margin-top: 80px;
-  color: #E59400;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Fjalla One", sans-serif;
-}
-.works-single p {
-  margin-bottom: 30px;
-  font-size: 20px;
-  line-height: 37px;
-}
-.works-single iframe {
-  float: left;
-  margin-bottom: 30px;
-  background: #0e0e0e;
-}
-.works-single figure {
-  width: 100%;
-  display: block;
-  margin-bottom: 30px;
-}
-.works-single figure img {
-  width: 100%;
-}
-
 .works-large{
     font-size: 260px;
     font-weight: 800;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #ccc;
-    position: absolute;
     display: flex;
-    margin: -10%;
+    margin: -12% -10% -15% -12%;
     letter-spacing: -10px;
+    width: 100%;
+    text-align: center;
 }
 
+#white-letter{
+    -webkit-text-stroke-color: #fff !important;
+}
 
+/* FAQS */
 .faq-section {
     padding: 50px 50px 50px 50px;
     position: relative;
@@ -1961,676 +1540,38 @@ s .process span:before {
   }
 
 
-/* TEAM */
-.team {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-  background: #E59400;
-  position: relative;
-}
-.team h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  opacity: 0.5;
-  font-size: 14px;
-}
-.team h2 {
-  margin-bottom: 60px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-}
-.team h2:before {
-  content: attr(data-text);
-  font-size: 20vw;
-  opacity: 0.05;
-  position: absolute;
-  left: 0;
-  top: -20%;
-}
-.team figure {
-  width: 100%;
-  display: block;
-  margin-bottom: 0;
-}
-.team figure img {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
-}
-.team figure figcaption {
-  width: 100%;
-  display: block;
-}
-.team figure figcaption small {
-  opacity: 0.6;
-  font-size: 11px;
-  display: block;
-  margin-bottom: 5px;
-}
-.team figure figcaption h4 {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
 
-/* WORK WITH US */
-.work-with-us {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-  background: #E59400;
-  position: relative;
-}
-.work-with-us:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: url(../images/bg-noise.gif);
-  opacity: 0.04;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-.work-with-us:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: url(../images/bg-lines.png) center;
-  z-index: 1;
-}
-.work-with-us .container {
-  position: relative;
-  z-index: 2;
-}
-.work-with-us h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 14px;
-}
-.work-with-us h2 {
-  margin-bottom: 60px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-  padding-right: 35%;
-}
-.work-with-us h2:before {
-  content: attr(data-text);
-  font-size: 20vw;
-  opacity: 0.05;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: -20%;
-}
-.work-with-us h4 {
-  margin-top: 5px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 25px;
-  line-height: 40px;
-  text-transform: uppercase;
-  padding-right: 20%;
-  margin-bottom: 40px;
-}
+  
+  .contact-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 50px;
+  }
 
-/* AWARDS  */
-.awards {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px 0;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-}
-.awards figure {
-  display: block;
-  margin: 0;
-}
-.awards figure img {
-  height: 60px;
-}
-.awards h5 {
-  font-weight: 600;
-  font-size: 15px;
-}
-.awards .odometer {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 40px;
-}
+  
+  /* Texto gigante detrás */
+  .contact-section h1 {
+    width: 100%;
+    position: absolute;
+    font-size: 260px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: -13px; /* Ajusta el espacio entre letras si es necesario */
+    padding: 0;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+   
 
-/* CLIENTS */
-.clients {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-  background: url(../images/pattern-bg.svg);
-}
-.clients h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  opacity: 0.5;
-  font-size: 14px;
-}
-.clients h2 {
-  margin-bottom: 60px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-}
-.clients h2:before {
-  content: attr(data-text);
-  font-size: 20vw;
-  opacity: 0.05;
-  position: absolute;
-  left: 0;
-  top: -20%;
-}
-.clients h4 {
-  margin-top: 5px;
-  margin-bottom: 40px;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 25px;
-  line-height: 40px;
-  text-transform: uppercase;
-  padding-right: 20%;
-}
-.clients ul {
-  width: 100%;
-  float: left;
-  margin: 0;
-  margin-top: 90px;
-  padding: 0;
-}
-.clients ul * {
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -ms-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-.clients ul li {
-  width: 25%;
-  float: left;
-  margin: 0;
-  padding: 10px;
-  list-style: none;
-  position: relative;
-}
-.clients ul li img {
-  opacity: 1;
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 15px;
-}
-.clients ul li small {
-  width: 100%;
-  height: 50px;
-  line-height: 50px;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  text-align: center;
-  font-size: 600;
-  opacity: 0;
-  font-family: "Fjalla One", sans-serif;
-  font-size: 22px;
-}
-.clients ul li:hover small {
-  margin-top: -25px;
-  opacity: 1;
-}
-.clients ul li:hover img {
-  opacity: 0.05;
-  transform: scale(1.2);
-}
 
-/* NEWS */
-.news {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px 0;
-}
-.news .post {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 50px 0;
-}
-.news .post.single-post {
-  padding-left: 10%;
-  padding-right: 10%;
-  flex-direction: column;
-}
-.news .post.single-post .post-content .inner .post-title {
-  font-size: 66px;
-}
-.news .post.single-post .post-image {
-  margin-bottom: 30px;
-  display: block;
-}
-.news .post:nth-child(2n+2) .post-image {
-  order: 2;
-}
-.news .post:nth-child(2n+2) .post-content {
-  padding-left: 0;
-}
-.news .post .post-image {
-  flex: 1;
-  margin: 0;
-}
-.news .post .post-image img {
-  width: 100%;
-}
-.news .post .post-content {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 50px;
-}
-.news .post .post-content .inner {
-  width: 100%;
-}
-.news .post .post-content .inner .social-share {
-  width: 100%;
-  float: left;
-  padding: 0 !important;
-  margin-bottom: 40px;
-}
-.news .post .post-content .inner .social-share li {
-  float: left;
-  margin-right: 5px;
-  padding: 0;
-  list-style: none;
-  text-align: center;
-}
-.news .post .post-content .inner .social-share li.facebook a {
-  background: #475993;
-}
-.news .post .post-content .inner .social-share li.twitter a {
-  background: #76a9ea;
-}
-.news .post .post-content .inner .social-share li.google-plus a {
-  background: #f34a38;
-}
-.news .post .post-content .inner .social-share li.linkedin a {
-  background: #0077b7;
-}
-.news .post .post-content .inner .social-share li.youtube a {
-  background: #f61c0d;
-}
-.news .post .post-content .inner .social-share li a {
-  width: 44px;
-  height: 44px;
-  line-height: 44px;
-  float: left;
-  background: #e8293b;
-  color: #fff;
-  border: none;
-  border-radius: 0;
-}
-.news .post .post-content .inner .post-date {
-  display: block;
-  font-size: 14px;
-  opacity: 0.5;
-  font-family: "Fjalla One", sans-serif;
-}
-.news .post .post-content .inner .post-title {
-  display: block;
-  font-size: 40px;
-  font-weight: 800;
-  margin-bottom: 30px;
-}
-.news .post .post-content .inner .post-title a {
-  display: block;
-  color: #0e0e0e;
-}
-.news .post .post-content .inner .post-title a:hover {
-  color: #E59400;
-  text-decoration: none;
-}
-.news .post .post-content .inner .post-author {
-  display: block;
-  font-family: "Fjalla One", sans-serif;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-.news .post .post-content .inner .post-author img {
-  width: 50px;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-.news .post .post-content .inner .post-text {
-  display: block;
-  line-height: 30px;
-  margin-bottom: 0;
-}
-.news .post .post-content .inner h6 {
-  font-size: 23px;
-  margin-bottom: 30px;
-  line-height: 1.5;
-}
-.news .post .post-content .inner blockquote {
-  display: block;
-  padding: 40px;
-  margin-bottom: 40px;
-  background: #E59400;
-  font-family: "Fjalla One", sans-serif;
-  position: relative;
-}
-.news .post .post-content .inner blockquote:before {
-  content: "";
-  font-family: fontawesome;
-  font-size: 90px;
-  position: absolute;
-  left: 40px;
-  top: 0;
-  opacity: 0.1;
-}
-.news .post .post-content .inner blockquote h5 {
-  font-weight: 800;
-  font-family: Poppins;
-  margin: 0;
-}
-.news .post .post-content .inner ul {
-  padding-left: 20px;
-}
-.news .post .post-content .inner ul li {
-  line-height: 1.9;
-}
-.news .post .post-content .inner p {
-  display: block;
-  line-height: 30px;
-}
-.news .post .post-content .inner p:last-child {
-  margin-bottom: 0;
-}
-
-/* HELLO */
-.hello {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-}
-.hello h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  opacity: 0.5;
-  font-size: 14px;
-}
-.hello h2 {
-  margin-bottom: 60px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-  padding-right: 35%;
-}
-.hello h2:before {
-  content: attr(data-text);
-  font-size: 20vw;
-  opacity: 0.05;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: -20%;
-}
-.hello address {
-  display: block;
-  margin-bottom: 100px;
-}
-.hello address b {
-  display: block;
-  margin-bottom: 10px;
-}
-.hello #success, .hello #error {
-  display: none;
-  float: left;
-}
-.hello #contact {
-  width: 100%;
-  display: flex;
-  margin-left: -100px;
-  padding: 40px 20px;
-  background: #fff;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-}
-.hello #contact .form-group:last-child {
-  margin-bottom: 0;
-}
-.hello #contact label {
-  display: block;
-  font-size: 14px;
-  font-weight: 600;
-}
-.hello #contact label.error {
-  color: #e8293b;
-  margin-top: 7px;
-  margin-bottom: 0;
-}
-.hello #contact div.error {
-  background: #e8293b;
-  color: #fff;
-  border-radius: 0;
-  border: none;
-}
-.hello #contact input[type=text] {
-  width: 100%;
-  height: 50px;
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 0 20px;
-}
-.hello #contact textarea {
-  width: 100%;
-  height: 150px;
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 20px;
-}
-.hello #contact button[type=submit] {
-  height: 50px;
-  padding: 0 40px;
-  font-size: 14px;
-  font-weight: 600;
-  color: #0e0e0e;
-  background: #E59400;
-  border: none;
-}
-
-/* DIRECTION */
-.direction {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 150px 0;
-}
-.direction h6 {
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: "Fjalla One", sans-serif;
-  opacity: 0.5;
-  font-size: 14px;
-}
-.direction h2 {
-  margin-bottom: 60px;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 1.2;
-  padding-right: 35%;
-}
-.direction h2:before {
-  content: attr(data-text);
-  font-size: 20vw;
-  opacity: 0.05;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: -20%;
-}
-.direction figure {
-  width: 100%;
-  display: block;
-  margin: 0;
-  position: relative;
-}
-.direction figure img {
-  width: 100%;
-}
-.direction figure figcaption {
-  width: 40%;
-  height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  background: rgba(0, 0, 0, 0.7);
-}
-.direction figure figcaption .inner {
-  width: 100%;
-  padding: 40px;
-  color: #fff;
-}
-.direction figure figcaption .inner .custom-link {
-  margin-top: 40px;
-}
-.direction figure figcaption .inner .custom-link a {
-  color: #fff;
-}
-.direction figure figcaption .inner .custom-link .lines span {
-  background: #fff;
-}
-.direction figure figcaption .inner h5 {
-  font-family: "Fjalla One", sans-serif;
-  font-size: 26px;
-  margin-bottom: 20px;
-}
-.direction figure figcaption .inner b {
-  font-weight: 600;
-}
-.direction figure figcaption .inner p {
-  font-size: 14px;
-}
-.direction figure figcaption .inner ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.direction figure figcaption .inner ul li {
-  display: block;
-  margin: 15px 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* FOOTER */
-.footer {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 100px 0;
-  background: #0e0e0e;
-  color: #fff;
-}
-.footer .footer-quote {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
-}
-.footer .footer-quote img {
-  height: 60px;
-  display: block;
-  margin-bottom: 20px;
-}
-.footer .footer-quote h2 {
-  font-size: 3vw;
-  font-weight: 800;
-  margin-bottom: 0;
-  color: #E59400;
-}
-.footer .footer-contact {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 80px;
-}
-.footer .footer-contact address {
-  margin-bottom: 0;
-}
-.footer .footer-contact address a {
-  color: #fff;
-  text-decoration: underline;
-}
-.footer .footer-bottom {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
-.footer .footer-bottom h5 {
-  margin-bottom: 10px;
-  font-family: "Fjalla One", sans-serif;
-  text-transform: uppercase;
-  color: #E59400;
-}
-.footer .footer-bottom ul {
-  display: block;
-  margin: 0;
-  padding: 0;
-}
-.footer .footer-bottom ul li {
-  display: inline-block;
-  margin: 0;
-  margin-right: 20px;
-  padding: 0;
-  list-style: none;
-}
-.footer .footer-bottom ul li:last-child {
-  margin-right: 0;
-}
-.footer .footer-bottom ul li a {
-  position: relative;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 600;
-  padding-bottom: 6px;
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -ms-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-  border-bottom: 2px solid transparent;
-}
-.footer .footer-bottom ul li a:hover {
-  padding-bottom: 1px;
-  border-bottom: 2px solid #fff;
-  text-decoration: none;
-}
 
 /* MEDIUM FIXES */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
