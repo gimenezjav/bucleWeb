@@ -153,12 +153,6 @@
                 });
               });
 
-
-              document.querySelector('form').addEventListener('submit', function(e) {
-                e.preventDefault();
-                // Aquí podrías agregar código para manejar el envío
-                alert('Formulario enviado');
-              });
               
               
 	
