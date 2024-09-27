@@ -1403,6 +1403,61 @@ header .sound .equalizer .holder {
   transition: 0.25s ease-in-out;
 }
 
+.nosotros-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background-size: cover;
+    background-position: center;
+}
+
+.nosotros-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 50px;
+}
+
+.nosotros-large {
+    font-size: 260px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px #999; /* Borde negro */
+    letter-spacing: -13px; /* Ajusta el espacio entre letras si es necesario */
+    margin-top: 10%;
+    padding: 0;
+}
+
+.nosotros-small {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000; /* Color negro para el "nosotros" más pequeño */
+    position: absolute;
+    top: 33%; /* Ajusta la posición de acuerdo a tu preferencia */
+    left: 60px;
+    margin: 0;
+}
+
+.nosotros-text {
+    position: absolute;
+    top: 13%;
+    right: 10%;
+    max-width: 40%;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #000;
+    font-weight: 500;
+}
+
+.nosotros-text p {
+    margin-bottom: 20px;
+}
+
+
 /* INTRO */
 .intro {
   width: 100%;
@@ -1469,7 +1524,7 @@ header .sound .equalizer .holder {
     display: flex;
     -webkit-text-stroke-color: #777;
     color: transparent;
-    font-size: 200px;
+    font-size: 260px;
     letter-spacing: -5px;
 }
 
@@ -1815,6 +1870,18 @@ s .process span:before {
 }
 .works-single figure img {
   width: 100%;
+}
+
+.works-large{
+    font-size: 260px;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ccc;
+    position: absolute;
+    display: flex;
+    margin: -10%;
+    letter-spacing: -10px;
 }
 
 
