@@ -67,7 +67,7 @@ theme.
 
 $color-dark :#0e0e0e;
 $color-red :#e8293b;
-$color-orange :#FFA500;
+$color-orange :#D66344;
 
 
 /* BODY */
@@ -365,7 +365,7 @@ header{ transform: scale(1.5); @include transition-cubic;
 	h6{ display: block; line-height: 1; margin-bottom: 20px; @include font-two; opacity: 0.5; font-size: 14px; position: relative;}
 	h2{ margin-bottom: 60px; font-weight: 800; font-size: 60px; line-height: 1.2;
 		&:before{content: attr(data-text); font-size: 20vw; opacity: 0.05; z-index: -1; transform: translateX(-50%); position: absolute; left: 50%; top: -50%;}}
-	span{ width: 80px; height: 80px; line-height: 62px; display: inline-block; font-size: 15px; font-weight: 600; color: #fff; border-radius: 50%; background: #E59400; position: relative; border:10px solid #e2fdf1; margin-top: 50px;s
+	span{ width: 80px; height: 80px; line-height: 62px; display: inline-block; font-size: 15px; font-weight: 600; color: #fff; border-radius: 50%; background: #D66344; position: relative; border:10px solid #e2fdf1; margin-top: 50px;s
 		&:before{content: ""; width: 30vw; height: 2px; background: #e2fdf1; position: absolute; left: -30px; top: 30px; z-index: -1;}}
 	.col-md-3:last-child span:before{display: none;}
 	figure{ width: 100%; display: block; margin: 20px 0; background: #fff;
