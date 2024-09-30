@@ -1072,6 +1072,7 @@ header .sound .equalizer .holder {
   left: 0;
   top: 0;
   color: #fff;
+  background-color: #000;
   overflow: hidden;
 }
 .swiper-slider .swiper-slide {
@@ -1754,9 +1755,6 @@ header .sound .equalizer .holder {
 
 /* MEDIUM FIXES */
 @media only screen and (max-width: 1199px), only screen and (max-device-width: 1199px) {
-  .swiper-slider .swiper-slide .slide-inner {
-    padding: 0 10%;
-  }
 
   .intro h4 {
     padding-right: 0;
@@ -1796,6 +1794,9 @@ header .sound .equalizer .holder {
 
   .hello h2 {
     padding-right: 0;
+  }
+  .description {
+    top: 0px; 
   }
 }
 /* RESPONSIVE TABLET FIXES */
@@ -1883,6 +1884,10 @@ header .sound .equalizer .holder {
     padding: 80px 0;
   }
 
+  .description {
+    top: 0px; 
+  }
+
   .news {
     padding: 30px 0;
     padding-bottom: 80px;
@@ -1914,7 +1919,7 @@ header .sound .equalizer .holder {
   }
 
   .hello {
-    padding: 80px 0;
+    padding: 0px 0;
   }
 
   .hello #contact {
@@ -1924,6 +1929,9 @@ header .sound .equalizer .holder {
 
   .footer .footer-quote h2 {
     font-size: 6vw;
+  }
+  .contact-section{
+    padding: 0 50px;
   }
 }
 /* RESPONSIVE MOBILE FIXES */
@@ -2053,10 +2061,6 @@ header .sound .equalizer .holder {
     padding-left: 0;
   }
 
-  .swiper-slider .swiper-slide .slide-inner {
-    padding: 0;
-  }
-
   .swiper-slider .swiper-pagination-bullets {
     display: none;
   }
@@ -2101,6 +2105,19 @@ header .sound .equalizer .holder {
     line-height: 30px;
   }
 
+  .description {
+    top: 0px; 
+  }
+
+  .hello{
+    justify-content: center;
+    transform: translateY(0%);
+  }
+
+  .contact-section{
+    padding: 50px;
+  }
+
   .hello h2 {
     font-size: 32px;
     margin-bottom: 20px;
@@ -2119,6 +2136,25 @@ header .sound .equalizer .holder {
     margin-top: 40px;
     padding: 0;
     margin-left: -15px;
+  }
+
+  .hello #contact .form-group:last-child {
+    margin-bottom: 100px;
+  }
+
+  .faq-section {
+    padding: 0;
+  }
+
+  .nosotros-text{
+    font-size: 22px;
+    top: 5%;
+    max-width: initial;
+  }
+
+  .nosotros-small{
+    top: initial;
+    bottom: 5% !important;
   }
 
   .team h2 {
