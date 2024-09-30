@@ -58,38 +58,49 @@
 		
 		
 		// PAGE TRANSITION
-		$('body a').on('click', function(e) {
-			
-			if (typeof $( this ).data('fancybox') == 'undefined') {
-			e.preventDefault(); 	
-			var url = this.getAttribute("href"); 
-			if( url.indexOf('#') != -1 ) {
-			var hash = url.substring(url.indexOf('#'));
+$('body a').on('click', function(e) {
+    
+    // Comprobar si es el enlace de la imagen que no debe cambiar el estado del menú
+    if ($(this).attr('id') === 'scroll-to-section') {
+        // Solo scroll a la sección sin afectar el menú
+        var hash = this.getAttribute("href");
 
-			if( $('body ' + hash ).length != 0 ){
-			$('.transition-overlay').removeClass("active");
-			$(".hamburger").toggleClass("open");
-			$("body").toggleClass("overflow");
-			$(".navigation-menu").removeClass("active");
-			$(".navigation-menu .inner ul").css("transition-delay", "0s");
-			$(".navigation-menu .inner blockquote").css("transition-delay", "0s");
-			$(".navigation-menu .bg-layers span").css("transition-delay", "0.3s");
+        if ( $('body ' + hash ).length != 0 ) {
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 1000);
+        }
+        return;  // Salir sin cambiar el estado del menú
+    }
 
-			$('html, body').animate({
-			scrollTop: $(hash).offset().top
-			}, 1000);
+    // Si no es el enlace de la imagen, continuar con la lógica normal
+    if (typeof $(this).data('fancybox') == 'undefined') {
+        e.preventDefault(); 
+        var url = this.getAttribute("href");
+        if (url.indexOf('#') != -1) {
+            var hash = url.substring(url.indexOf('#'));
 
-			}
-			}
-			else {
-			$('.transition-overlay').toggleClass("active");
-			setTimeout(function(){
-			window.location = url;
-			},1000); 
+            if ($('body ' + hash ).length != 0) {
+                $('.transition-overlay').removeClass("active");
+                $(".hamburger").toggleClass("open");
+                $("body").toggleClass("overflow");
+                $(".navigation-menu").removeClass("active");
+                $(".navigation-menu .inner ul").css("transition-delay", "0s");
+                $(".navigation-menu .inner blockquote").css("transition-delay", "0s");
+                $(".navigation-menu .bg-layers span").css("transition-delay", "0.3s");
 
-			}
-			}
-			});
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 1000);
+            }
+        } else {
+            $('.transition-overlay').toggleClass("active");
+            setTimeout(function() {
+                window.location = url;
+            }, 1000);
+        }
+    }
+});
 		
 		
 		// PAGE HEADER FADE
@@ -152,6 +163,7 @@
                   answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
                 });
               });
+
 
               
               
