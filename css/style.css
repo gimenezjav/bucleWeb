@@ -1872,6 +1872,12 @@ header .sound .equalizer .holder {
     margin-bottom: 50px;
   }
 
+.works-large {
+    font-size: 17vw;
+    margin: -25% 0% 0% -8%;
+    letter-spacing: 0px;
+}
+
   .works .project-box {
     padding: 35px 0;
   }
@@ -1888,6 +1894,26 @@ header .sound .equalizer .holder {
     top: 0px; 
   }
 
+  .nosotros-wrapper{
+    justify-content: flex-end;
+  }
+
+  .nosotros-large{
+    font-size: 17vw;
+    margin-bottom: 25%;
+    letter-spacing: 0px;
+  }
+
+  #second-section .description {
+     left: 0px;
+}
+
+.contact-section h1 {
+
+    font-size: 17vw;
+    top:58%;
+    letter-spacing: 0px;
+}
   .news {
     padding: 30px 0;
     padding-bottom: 80px;
@@ -2236,6 +2262,12 @@ header .sound .equalizer .holder {
     font-size: 12vw;
   }
 
+.works-large {
+    font-size: 17vw;
+    margin: -25% 0% 0% -5%;
+    letter-spacing: 0px;
+}
+
   .services-content-block .col-md-4:nth-child(3) {
     margin: 40px 0;
   }
@@ -2260,6 +2292,20 @@ header .sound .equalizer .holder {
   .clients ul li {
     width: 50%;
   }
+
+  .faq-section .faq-header {
+    margin-top: 0px;
+}
+.faq-section .faq-header h1 {
+    font-size: 40vw;
+    margin-bottom: 40px;
+    letter-spacing: -5px;
+}
+
+#letter-a {
+    margin-left: -18px;
+    margin-right: -8px;
+}
 
   .news .pagination {
     margin-top: 0;
