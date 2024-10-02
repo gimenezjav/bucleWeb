@@ -1082,6 +1082,12 @@ header .sound .equalizer .holder {
 .swiper-slider .swiper-slide.swiper-slide-active .slide-inner {
   transform: scale(1);
 }
+.slide-inner video {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Esto asegura que el video cubra el contenedor manteniendo su proporción */
+    position: relative;
+}
 .swiper-slider .swiper-slide.swiper-slide-active .slide-inner .container {
   transform: translateY(0);
   -webkit-transition: all 0.5s ease;
@@ -1096,7 +1102,7 @@ header .sound .equalizer .holder {
 .swiper-slider .swiper-slide .slide-inner {
   width: 100%;
   height: 100%;
-  transform: scale(0.8);
+  transform: scale(0.5);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1380,7 +1386,7 @@ header .sound .equalizer .holder {
 .works .project-box:hover figure {
   transform: scale(0.95);
 }
-.works .project-box:hover figure img {
+.works .project-box:hover figure video {
   transform: scale(1.15);
 }
 .works .project-box:last-child {
@@ -1409,7 +1415,7 @@ header .sound .equalizer .holder {
   overflow: hidden;
   border: 1px solid transparent;
 }
-.works .project-box figure img {
+.works .project-box figure video {
   width: 100%;
 }
 .works .project-box .content-box {
@@ -1872,6 +1878,12 @@ header .sound .equalizer .holder {
     margin-bottom: 50px;
   }
 
+.works-large {
+    font-size: 17vw;
+    margin: -25% 0% 0% 0%;
+    letter-spacing: 0px;
+}
+
   .works .project-box {
     padding: 35px 0;
   }
@@ -1888,6 +1900,26 @@ header .sound .equalizer .holder {
     top: 0px; 
   }
 
+  .nosotros-wrapper{
+    justify-content: flex-end;
+  }
+
+  .nosotros-large{
+    font-size: 17vw;
+    margin-bottom: 25%;
+    letter-spacing: 0px;
+  }
+
+  #second-section .description {
+     left: 0px;
+}
+
+.contact-section h1 {
+
+    font-size: 17vw;
+    top:58%;
+    letter-spacing: 0px;
+}
   .news {
     padding: 30px 0;
     padding-bottom: 80px;
@@ -2236,6 +2268,12 @@ header .sound .equalizer .holder {
     font-size: 12vw;
   }
 
+.works-large {
+    font-size: 17vw;
+    margin: -20% 0% 0% 0%;
+    letter-spacing: 0px;
+}
+
   .services-content-block .col-md-4:nth-child(3) {
     margin: 40px 0;
   }
@@ -2260,6 +2298,20 @@ header .sound .equalizer .holder {
   .clients ul li {
     width: 50%;
   }
+
+  .faq-section .faq-header {
+    margin-top: 0px;
+}
+.faq-section .faq-header h1 {
+    font-size: 40vw;
+    margin-bottom: 40px;
+    letter-spacing: -5px;
+}
+
+#letter-a {
+    margin-left: -18px;
+    margin-right: -8px;
+}
 
   .news .pagination {
     margin-top: 0;
