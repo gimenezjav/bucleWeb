@@ -1981,6 +1981,12 @@ header .sound .equalizer .holder {
     max-width: 50%;
 }
 
+
+#bucle-letter {
+    font-size: 22vw;
+    margin-bottom: 20%;
+}
+
   #second-section .description {
      left: 40px;
 }
