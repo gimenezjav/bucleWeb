@@ -467,6 +467,10 @@ section {
   transition-delay: 0.5s;
   transform: translateY(30px);
 }
+
+.inner img{
+    width: 15%;
+}
 .navigation-menu.active .bg-layers {
   visibility: visible;
 }
@@ -1267,7 +1271,13 @@ header .sound .equalizer .holder {
 }
 
 .other-text p {
- margin-bottom: 20px;
+ margin-bottom: 40px;
+ margin-top: -25px;
+}
+
+#bucle-letter {
+    -webkit-text-stroke: 1px #fff;
+    margin-top: 0%;
 }
 
 .text-bold{
@@ -1283,12 +1293,11 @@ header .sound .equalizer .holder {
 }
 
 .other-section img {
-    max-width: 100%;
+    max-width: 90%;
     max-height: 90vh; /* Limita la altura para que no se salga de la pantalla */
     height: auto;
     width: auto; 
 }
-
 
 .nosotros-section {
     position: relative;
@@ -1776,7 +1785,7 @@ header .sound .equalizer .holder {
     
   }
   .contact-footer img {
-    width: 55%; /* Ajusta el tamaño de la imagen, puedes cambiar este valor */
+    width: 100%; /* Ajusta el tamaño de la imagen, puedes cambiar este valor */
     max-width: 150px; /* Limita el tamaño máximo de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
     cursor: pointer; /* Cambia el cursor a "puntero" cuando pase sobre la imagen */
@@ -1793,6 +1802,7 @@ header .sound .equalizer .holder {
     gap: 35px; /* Espacio entre los iconos */
     list-style-type: none; /* Quitar los puntos de la lista */
     padding: 0; /* Eliminar el padding de la lista */
+    padding-top: 12px;
 }
 
 .contact-row li {
@@ -1972,7 +1982,7 @@ header .sound .equalizer .holder {
 }
 
   #second-section .description {
-     left: 0px;
+     left: 40px;
 }
 
 .contact-section h1 {
@@ -2195,6 +2205,17 @@ header .sound .equalizer .holder {
     margin-bottom: 40px;
   }
 
+  .contact-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 10%;
+    flex-direction: column;
+    align-content: center;
+    gap: 20px;
+  }
+
   .works-single h2 {
     font-size: 32px;
     margin-bottom: 20px;
@@ -2299,6 +2320,11 @@ header .sound .equalizer .holder {
     position: static;
     display: block;
   }
+
+  #bucle-letter {
+    font-size: 22vw;
+    margin-bottom: 20%;
+}
 
   .works h2 {
     font-size: 32px;
