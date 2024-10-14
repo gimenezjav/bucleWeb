@@ -56,7 +56,7 @@
 
         document.getElementById('instagram-link').addEventListener('click', function (e) {
             e.preventDefault(); // Evita el comportamiento predeterminado
-            window.open('https://www.instagram.com', '_blank', 'noopener');
+            window.open('https://www.instagram.com/bucleia', '_blank', 'noopener');
         });
 
         document.getElementById('behance-link').addEventListener('click', function (e) {
