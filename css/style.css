@@ -1581,6 +1581,10 @@ header .sound .equalizer .holder {
     margin-top: 10px;
     color: #666;
   }
+
+  .faq-answer {
+  width: 70%;
+  }
   
   /* Para asegurarse que las letras FAQ no se superponen al margen derecho */
   .faq-section .faq-header {
@@ -2245,6 +2249,10 @@ header .sound .equalizer .holder {
   .faq-section {
     padding: 0;
   }
+
+  .faq-answer {
+    width: 95%;
+    }
 
   .nosotros-text{
     font-size: 22px;

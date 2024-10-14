@@ -158,20 +158,27 @@
         });
     });
 
-
     document.querySelectorAll('.faq-question').forEach(item => {
         item.addEventListener('click', () => {
             const parent = item.parentElement;
-
-            // Toggle la clase 'active' para expandir o contraer la respuesta
-            parent.classList.toggle('active');
-
-            // Alternar visibilidad de la respuesta
             const answer = parent.querySelector('.faq-answer');
-            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+    
+            // Si el elemento ya está abierto, solo lo cerramos
+            if (parent.classList.contains('active')) {
+                parent.classList.remove('active');
+                answer.style.display = 'none';
+            } else {
+                // Cerrar todos los FAQ abiertos
+                document.querySelectorAll('.faq-item.active').forEach(activeItem => {
+                    activeItem.classList.remove('active');
+                    activeItem.querySelector('.faq-answer').style.display = 'none';
+                });
+    
+                // Abrir el seleccionado
+                parent.classList.add('active');
+                answer.style.display = 'block';
+            }
         });
     });
-
-
 
 })(jQuery);	
