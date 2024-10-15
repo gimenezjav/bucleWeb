@@ -1,18 +1,16 @@
 <?php
-
-    $to = "gimenez.javier.a@ygmail.com";
-    $from = $_REQUEST['email'];
-    $name = $_REQUEST['name'];
-    $headers = "From: $from";
+    ini_set( 'display_errors', 1 );
+    error_reporting( E_ALL );
+    $from = "contacto@somosbucle.net";
+    $to = "gimenez.javier.a@gmail.com";
+    $subject = "Nuevo contacto a traves de Formulario";
     
-
-    $fields = array();
-    $fields{"name"} = "Name";
-    $fields{"email"} = "E-mail";
-    $fields{"message"} = "Message";
-
-    $body = "Message from yourwebsite:\n\n"; foreach($fields as $a => $b){   $body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); }
-
-    $send = mail($to, $body, $headers);
-
+    $email = $_REQUEST['email'];
+    $name = $_REQUEST['name'];
+    $message = $_REQUEST['message'];
+    $body = "NOMBRE: $name\nE-MAIL: $email\nMENSAJE: $message";
+    
+    $headers = "From:" . $from;
+    mail($to,$subject,$body, $headers);
+    echo "The email message was sent.";
 ?>
