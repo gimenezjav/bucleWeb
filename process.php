@@ -1,7 +1,7 @@
 <?php
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
-    $from = "contacto@somosbucle.net";
+    $from = "data@bucleia.com";
     $to = "gimenez.javier.a@gmail.com";
     $subject = "Nuevo contacto a traves de Formulario";
     
