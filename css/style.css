@@ -1994,7 +1994,7 @@ header .sound .equalizer .holder {
 .contact-section h1 {
 
     font-size: 17vw;
-    top:58%;
+    top:45%;
     letter-spacing: 0px;
 }
   .news {
@@ -2219,7 +2219,19 @@ header .sound .equalizer .holder {
     padding: 0px 10%;
     flex-direction: column;
     align-content: center;
-    gap: 20px;
+    gap: 0px;
+  }
+
+  .contact-section {
+    justify-content: initial;
+    height: initial;
+    min-height: 100vh;
+  }
+
+  .other-section{
+    justify-content: initial;
+    height: initial;
+    min-height: 100vh;
   }
 
   .works-single h2 {
@@ -2246,7 +2258,7 @@ header .sound .equalizer .holder {
   }
 
   .contact-section{
-    padding: 50px;
+    padding: 10px;
   }
 
   .hello h2 {
@@ -2270,7 +2282,7 @@ header .sound .equalizer .holder {
   }
 
   .hello #contact .form-group:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
 
   .faq-section {
