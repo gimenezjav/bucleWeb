@@ -181,4 +181,18 @@
         });
     });
 
+    document.addEventListener("DOMContentLoaded", () => {
+        const videoSource = document.getElementById("videoSource");
+        const isMobile = window.matchMedia("(max-width: 768px)").matches;
+    
+        if (isMobile) {
+            videoSource.src = "videos/reel_vertical.mp4";
+        } else {
+            videoSource.src = "videos/BUCLE-WEB_Animatic_v11_WEB_comprimido.mp4";
+        }
+    
+        // Forcing the video to reload with the new source
+        videoSource.parentElement.load();
+    });
+
 })(jQuery);	

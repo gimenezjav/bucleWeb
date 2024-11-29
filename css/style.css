@@ -1858,7 +1858,6 @@ header .sound .equalizer .holder {
   }
   .swiper-slider .swiper-slide.swiper-slide-active .slide-inner {
     transform: scale(1);
-    object-fit: contain;
   }
 
   .direction figure figcaption {
